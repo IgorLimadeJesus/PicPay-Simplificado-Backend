@@ -1,0 +1,80 @@
+[
+  {
+    "ContainingType": "Desafio_PicPay_Back_end.Controllers.CarteiraController",
+    "Method": "CriarCarteira",
+    "RelativePath": "api/Carteira",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "carteiraModel",
+        "Type": "Desafio_PicPay_Back_end.Models.CarteiraModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Desafio_PicPay_Back_end.Models.CarteiraModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Desafio_PicPay_Back_end.Controllers.CarteiraController",
+    "Method": "GetCarteira",
+    "RelativePath": "api/Carteira/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Desafio_PicPay_Back_end.Models.CarteiraModel, Desafio-PicPay-Back-end, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Desafio_PicPay_Back_end.Controllers.CarteiraController",
+    "Method": "DeleteCarteira",
+    "RelativePath": "api/Carteira/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Desafio_PicPay_Back_end.Models.CarteiraModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
