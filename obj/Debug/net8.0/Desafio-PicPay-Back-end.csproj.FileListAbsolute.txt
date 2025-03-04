@@ -170,3 +170,4 @@ C:\Users\Thanos\Documents\Projetos\Csharp\Desafio-PicPay-Back-end\obj\Debug\net8
 C:\Users\Thanos\Documents\Projetos\Csharp\Desafio-PicPay-Back-end\obj\Debug\net8.0\Desafio-PicPay-Back-end.pdb
 C:\Users\Thanos\Documents\Projetos\Csharp\Desafio-PicPay-Back-end\obj\Debug\net8.0\Desafio-PicPay-Back-end.genruntimeconfig.cache
 C:\Users\Thanos\Documents\Projetos\Csharp\Desafio-PicPay-Back-end\obj\Debug\net8.0\ref\Desafio-PicPay-Back-end.dll
+C:\Users\Thanos\Documents\Projetos\Csharp\Desafio-PicPay-Back-end\obj\Debug\net8.0\Desafio-PicPay-Back-end.sourcelink.json

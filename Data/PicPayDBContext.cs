@@ -12,10 +12,12 @@ namespace Desafio_PicPay_Back_end.Data
         }
 
         public DbSet<CarteiraModel> carteiras { get; set; }
+        public DbSet<TransacaoModel> transacao { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new CarteiraMap());
+            modelBuilder.ApplyConfiguration(new TransacaoMap());
             base.OnModelCreating(modelBuilder);
         }
 

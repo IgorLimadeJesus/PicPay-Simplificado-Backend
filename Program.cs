@@ -27,6 +27,7 @@ namespace Desafio_PicPay_Back_end
                 );
 
             builder.Services.AddScoped<ICarteiraRepositorio, CarteiraRepositorio>();
+            builder.Services.AddScoped<ITransacaoRepositorio, TransacaoRepositorio>();
 
             var app = builder.Build();
 

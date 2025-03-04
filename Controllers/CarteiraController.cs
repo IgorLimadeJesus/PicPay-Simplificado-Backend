@@ -16,7 +16,7 @@ namespace Desafio_PicPay_Back_end.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<List<CarteiraModel>>> GetCarteira(int id)
+        public async Task<ActionResult<List<CarteiraModel>>> GetCarteiraId(int id)
         {
             CarteiraModel carteira = await _carteiraRepositorio.GetCarteira(id);
             return Ok(carteira);

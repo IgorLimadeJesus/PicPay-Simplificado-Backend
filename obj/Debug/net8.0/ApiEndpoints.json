@@ -27,7 +27,7 @@
   },
   {
     "ContainingType": "Desafio_PicPay_Back_end.Controllers.CarteiraController",
-    "Method": "GetCarteira",
+    "Method": "GetCarteiraId",
     "RelativePath": "api/Carteira/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -68,6 +68,104 @@
     "ReturnTypes": [
       {
         "Type": "Desafio_PicPay_Back_end.Models.CarteiraModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Desafio_PicPay_Back_end.Controllers.TransacaoController",
+    "Method": "CreateTransacao",
+    "RelativePath": "api/Transacao",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "transacaoModel",
+        "Type": "Desafio_PicPay_Back_end.Models.TransacaoModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Desafio_PicPay_Back_end.Models.TransacaoModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Desafio_PicPay_Back_end.Controllers.TransacaoController",
+    "Method": "GetTransacao",
+    "RelativePath": "api/Transacao",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Desafio_PicPay_Back_end.Models.TransacaoModel, Desafio-PicPay-Back-end, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Desafio_PicPay_Back_end.Controllers.TransacaoController",
+    "Method": "GetTransacaoId",
+    "RelativePath": "api/Transacao/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Desafio_PicPay_Back_end.Models.TransacaoModel, Desafio-PicPay-Back-end, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Desafio_PicPay_Back_end.Controllers.TransacaoController",
+    "Method": "Delete",
+    "RelativePath": "api/Transacao/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Desafio_PicPay_Back_end.Models.TransacaoModel",
         "MediaTypes": [
           "text/plain",
           "application/json",

@@ -22,5 +22,9 @@ namespace Desafio_PicPay_Back_end.Models
             Saldo += valor;
         }
 
+        public static implicit operator CarteiraModel(TransacaoModel v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
