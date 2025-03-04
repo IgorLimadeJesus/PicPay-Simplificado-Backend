@@ -1,5 +1,6 @@
 ﻿using Desafio_PicPay_Back_end.Data;
 using Desafio_PicPay_Back_end.Models;
+using Desafio_PicPay_Back_end.Models.Enum;
 using Desafio_PicPay_Back_end.Repositorios.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
@@ -21,7 +22,11 @@ namespace Desafio_PicPay_Back_end.Repositorios
             {
                 var sender = await _dbContext.carteiras.FirstOrDefaultAsync(x => x.Id == transacao.SenderId);
                 var reciver = await _dbContext.carteiras.FirstOrDefaultAsync(x => x.Id == transacao.ReciverId);
-
+                
+                if (sender.UserType == UserType.Lojista)
+                {
+                    throw new Exception("Erro, Lojistas apenas recebem");
+                }
                 if (sender == null || reciver == null)
                 {
                     throw new Exception("Carteira não encontrada");
